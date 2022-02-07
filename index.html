@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Clone_gitlab/css/bootstrap.css">
+    <link rel="stylesheet" href="../Clone_gitlab/css/app.css">
+    <link rel="stylesheet" href="../Clone_gitlab/js/bootstrap.js">
+    <title>Document</title>
+</head>
+<body>
+    <div class="">
+    <header>
+    <nav class="navbar navbar-expand-lg navbar">
+      
+        <div class="d-flex logo">
+            <a class="navbar-brand" id="js-onboarding-new-project-link" href="#"><svg width="24" height="24" class="tanuki-logo" viewBox="0 0 36 36">
+                <path class="tanuki-shape tanuki-left-ear" fill="#e24329" d="M2 14l9.38 9v-9l-4-12.28c-.205-.632-1.176-.632-1.38 0z"></path>
+                <path class="tanuki-shape tanuki-right-ear" fill="#e24329" d="M34 14l-9.38 9v-9l4-12.28c.205-.632 1.176-.632 1.38 0z"></path>
+                <path class="tanuki-shape tanuki-nose" fill="#e24329" d="M18,34.38 3,14 33,14 Z"></path>
+                <path class="tanuki-shape tanuki-left-eye" fill="#fc6d26" d="M18,34.38 11.38,14 2,14 6,25Z"></path>
+                <path class="tanuki-shape tanuki-right-eye" fill="#fc6d26" d="M18,34.38 24.62,14 34,14 30,25Z"></path>
+                <path class="tanuki-shape tanuki-left-cheek" fill="#fca326" d="M2 14L.1 20.16c-.18.565 0 1.2.5 1.56l17.42 12.66z"></path>
+                <path class="tanuki-shape tanuki-right-cheek" fill="#fca326" d="M34 14l1.9 6.16c.18.565 0 1.2-.5 1.56L18 34.38z"></path>
+              </svg>
+              <span class="logo-text d-lg-inline ">GitLab</span>
+            </a>
+           
+            <div class="d-flex">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a aria-current="page" id="js-onboarding-new-project-link" class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                          </svg><span class="logo-text d-lg-inline ">Menu</span></a>
+                    </li>
+                   
+                </ul>
+            </div>
+                
+                <div class="navbar-collapse">
+                   <div class="col" style="margin-left: 500px; margin-right: 10px;">
+                    <a class="header-new-dropdown-toggle has-tooltip" id="js-onboarding-new-project-link" title="New..." ref="tooltip" aria-label="New..." data-toggle="dropdown" data-placement="bottom" data-container="body" data-display="static" data-qa-selector="new_menu_toggle" href="#">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-plus-fill" viewBox="0 0 16 16">
+                                    <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0z"/>
+                                  </svg>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                  </svg>
+                            </li>
+                        </ul>
+                        
+                        </a>
+                   </div>
+                <div class="gl-search-box-by-type" style="margin-top: -150px;">
+                <svg class="s16 gl-search-box-by-type-search-icon gl-icon" data-testid="search-icon"></svg>
+                <input autocomplete="off" class="form-control gl-form-input gl-search-box-by-type-input" id="search" placeholder="Search or jump to..." type="text">
+                </div>
+                <div class="col-1" style="margin-left: 10px;">
+                    <a class="header-new-dropdown-toggle has-tooltip" id="js-onboarding-new-project-link" title="New..." ref="tooltip" aria-label="New..." data-toggle="dropdown" data-placement="bottom" data-container="body" data-display="static" data-qa-selector="new_menu_toggle" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+                            <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+                          </svg>
+                        </a>
+                   </div>
+                   <div class="col-1"style="margin-right: -15px; margin-left: -30px">
+                    <a class="header-new-dropdown-toggle has-tooltip" id="js-onboarding-new-project-link" title="New..." ref="tooltip" aria-label="New..." data-toggle="dropdown" data-placement="bottom" data-container="body" data-display="static" data-qa-selector="new_menu_toggle" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" fill="currentColor" height="16"><path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z">
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                          </svg>   
+                    </a>
+                   </div>
+
+                   <div class="col-1"style="margin-right: -15px;">
+                    <a class="header-new-dropdown-toggle has-tooltip" id="js-onboarding-new-project-link" title="New..." ref="tooltip" aria-label="New..." data-toggle="dropdown" data-placement="bottom" data-container="body" data-display="static" data-qa-selector="new_menu_toggle" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-square" viewBox="0 0 16 16">
+                            <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
+                            <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                          </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                          </svg>   
+                    </a>
+                   </div>
+
+                   <div id="ico" class="col-1"style="margin-right: -15px;">
+                    <a class="header-new-dropdown-toggle has-tooltip" id="js-onboarding-new-project-link" title="New..." ref="tooltip" aria-label="New..." data-toggle="dropdown" data-placement="bottom" data-container="body" data-display="static" data-qa-selector="new_menu_toggle" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                          </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                          </svg>   
+                    </a>
+                   </div>
+
+                   <div id="ico" class="col-2">
+                    <a class="header-user-dropdown-toggle" id="js-onboarding-new-project-link" data-toggle="dropdown" href=""><img class="header-user-avatar qa-user-avatar js-lazy-loaded qa-js-lazy-loaded" style="border-radius: 50px;" alt=" " src="../Clone_gitlab/avatar(1).png" loading="lazy"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                          </svg></a>
+                   </div>
+            </div>
+                
+    </nav>
+
+
+
+
+</header>
+<div class="row">
+<div class="d-flex flex-column flex-shrink-0 p-3 col-4" style="width: 250px; height: 600px; background-color: #f0f0f0;">
+    
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a class="btn btn" style="background-color: #fdf0dd; border: #fdf0dd;" href="#" role="button">B</a> <strong> box finale</strong>
+      </li>
+      <li>
+        <a href="#" type="button" class="btn">
+           <strong> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files-alt" viewBox="0 0 16 16">
+                <path d="M11 0H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2 2 2 0 0 0 2-2V4a2 2 0 0 0-2-2 2 2 0 0 0-2-2zm2 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1V3zM2 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2z"/>
+              </svg></strong>
+          Projet Informatique
+        </a>
+      </li>
+      <li>
+        <a href="#" type="button" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+              </svg>
+          Repository
+        </a>
+      </li>
+      <li>
+        <a href="#" type="button" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+              </svg>
+          Issues
+        </a>
+      </li>
+      <li>
+        <a href="#" type="button" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" fill="currentColor" height="16"><path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z">
+            </svg>
+          Merges
+        </a>
+      </li>
+      <li>
+        <a href="#" type="button" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M14.064 0a8.75 8.75 0 00-6.187 2.563l-.459.458c-.314.314-.616.641-.904.979H3.31a1.75 1.75 0 00-1.49.833L.11 7.607a.75.75 0 00.418 1.11l3.102.954c.037.051.079.1.124.145l2.429 2.428c.046.046.094.088.145.125l.954 3.102a.75.75 0 001.11.418l2.774-1.707a1.75 1.75 0 00.833-1.49V9.485c.338-.288.665-.59.979-.904l.458-.459A8.75 8.75 0 0016 1.936V1.75A1.75 1.75 0 0014.25 0h-.186zM10.5 10.625c-.088.06-.177.118-.266.175l-2.35 1.521.548 1.783 1.949-1.2a.25.25 0 00.119-.213v-2.066zM3.678 8.116L5.2 5.766c.058-.09.117-.178.176-.266H3.309a.25.25 0 00-.213.119l-1.2 1.95 1.782.547zm5.26-4.493A7.25 7.25 0 0114.063 1.5h.186a.25.25 0 01.25.25v.186a7.25 7.25 0 01-2.123 5.127l-.459.458a15.21 15.21 0 01-2.499 2.02l-2.317 1.5-2.143-2.143 1.5-2.317a15.25 15.25 0 012.02-2.5l.458-.458h.002zM12 5a1 1 0 11-2 0 1 1 0 012 0zm-8.44 9.56a1.5 1.5 0 10-2.12-2.12c-.734.73-1.047 2.332-1.15 3.003a.23.23 0 00.265.265c.671-.103 2.273-.416 3.005-1.148z"></path></svg>
+          CI/CD
+        </a>
+      </li>
+      <li>
+        <a href="#" type="button" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 23c-.2 0-.4 0-.5-.2C3.1 17.6 3 11.3 3 11V4c0-.6.4-1 1-1C6.8 3 11.6.9 11.6.9c.5-.2 1.1 0 1.3.5.2.5 0 1.1-.5 1.3-.2.1-4.3 1.9-7.4 2.2V11c0 .2.2 5.5 7.5 10.2.5.3.6.9.3 1.4-.1.2-.5.4-.8.4z"/><path d="M12 23c-.3 0-.7-.2-.8-.5-.3-.5-.2-1.1.3-1.4C18.8 16.5 19 11.2 19 11V4.9c-3.1-.4-7.2-2.1-7.4-2.2-.5-.2-.7-.8-.5-1.3.2-.5.8-.7 1.3-.5C12.4.9 17.2 3 20 3c.6 0 1 .4 1 1v7c0 .3-.1 6.6-8.5 11.8-.1.2-.3.2-.5.2z"/>
+                <path d="M12 23c-.6 0-1-.4-1-1V2c0-.6.4-1 1-1s1 .4 1 1v20c0 .6-.4 1-1 1z"/></svg> Security & Compliance
+        </a>
+      </li>
+      <li>
+        <a href="#" type="button" class="btn">
+           <svg class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M899.005706 124.750235c-6.27696-6.258541-14.833847-10.256598-24.530696-10.256598L149.907707 114.493637c-9.117658 0-18.235316 3.998057-24.533766 10.256598l0 0c-6.257517 6.27696-9.695826 14.815427-9.695826 24.511253l0 0L115.678114 873.046986l0 0c0 9.68764 3.437286 18.234293 9.695826 24.503067l0 0c6.297426 6.266727 15.415085 9.686616 24.533766 9.686616l724.567303 0c9.69685 0 18.253736-3.419889 24.530696-9.686616 6.277984-6.268774 10.276041-14.81645 10.276041-24.503067l0 0L909.281747 149.262512l0 0C909.281747 139.565662 905.28369 131.027196 899.005706 124.750235L899.005706 124.750235zM63.757604 873.046986 63.757604 149.262512l0 0c0-23.933085 9.69685-45.586245 25.111934-60.97984 15.972786-15.396665 37.664831-25.073048 61.038168-25.073048l724.567303 0c23.969924 0 45.64355 9.676383 61.056588 25.073048l0 0c15.395642 15.393595 25.092491 37.046754 25.092491 60.97984l0 0L960.624089 873.046986l0 0c0 23.363104-9.69685 45.016263-25.092491 60.971653l0 0c-15.414061 15.395642-37.086663 25.082258-61.056588 25.082258L149.907707 959.100898c-23.37436 0-45.065382-9.686616-61.038168-25.082258l0 0C73.453431 918.064272 63.757604 896.41009 63.757604 873.046986L63.757604 873.046986zM387.823328 299.155381c-1.13894-2.859118-1.720178-5.717212-1.720178-9.116635l0 0c0-7.416923 2.860141-13.69593 7.41897-18.253736l0 0c4.557806-4.559852 10.854209-7.978718 18.273179-7.978718 3.417843 0 6.836709 1.13894 10.254551 2.279926 1.719154 1.13894 3.419889 2.279926 5.13802 3.419889l0.561795 0 2.858094 2.858094L631.99749 493.476111l4.579295 5.13802-0.579191 0.580215c0.579191 1.139963 0.579191 1.699712 1.139963 2.279926 1.137916 3.417843 1.719154 6.257517 1.719154 9.676383s-0.580215 6.268774-1.719154 9.117658l0 0c-0.560772 0.569982-0.560772 1.708921-1.139963 2.279926l1.139963 0.569982-5.139044 5.127787L430.609807 749.376339l-2.858094 3.418866-0.561795 0c-1.719154 1.139963-3.419889 2.28095-5.13802 2.849908-3.418866 1.708921-6.837732 2.278903-10.254551 2.278903l0 0 0 0c-7.41897 0-13.715373-2.847861-18.273179-7.407714l0 0c-4.558829-4.558829-7.41897-11.396561-7.41897-18.234293l0 0c0-3.428076 0.580215-6.27696 1.720178-9.69685 0-0.569982 0.560772-1.139963 0.560772-1.709945l-0.560772-0.569982 4.579295-5.696746 185.414897-203.457832L392.402623 307.134099l-5.139044-5.698792 1.121544-0.580215C388.3841 300.295344 387.823328 299.715129 387.823328 299.155381L387.823328 299.155381z"  /></svg> Deployement
+        </a>
+      </li>
+      <li>
+        <a href="#" type="button" class="btn">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"
+            viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve"><path id="icon_5_" style="fill:#262626;" d="M122.465,12.122H5.535C2.474,12.122,0,14.595,0,17.657v80.26
+               c0,3.062,2.474,5.535,5.535,5.535h43.918l-0.692,4.359c0,0-0.242,2.647-2.647,4.411c-2.387,1.764-4.29,3.286-2.387,3.546
+               c1.816,0.242,19.01,0.017,20.272,0c1.28,0.017,18.456,0.242,20.29,0c1.885-0.259-0.017-1.782-2.404-3.546
+               c-2.404-1.764-2.647-4.411-2.647-4.411l-0.675-4.359h43.901c3.062,0,5.535-2.474,5.535-5.535v-80.26
+               C128,14.595,125.526,12.122,122.465,12.122z M119.697,86.846H8.303V20.424h111.395V86.846z M26.294,58.468h11.069v20.758H26.294
+               V58.468z M49.818,52.241h11.071v26.985H49.818V52.241z M71.96,48.09H83.03v31.136H71.96V48.09z M92.716,40.133h11.071v39.093
+               H92.716V40.133z"/></svg> Monitor
+        </a>
+      </li>
+      <li>
+        <a href="#" type="button" class="btn">
+          <svg class="svg-icon"  width="16" height="16" fill="currentColor" viewBox="0 0 1027 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M791.893333 771.413333h-.893333c-10.24 0-17.066667-6.826667-17.066667-17.066666s6.826667-17.066667 17.066667-17.066667h23.893333c109.226667 0 197.973333-88.746667 197.973334-197.973333S901.12 341.333333 791.893333 341.333333c-10.24 0-20.48-6.826667-20.48-13.653333-20.48-136.533333-139.946667-242.346667-279.893333-242.346667C334.506667 88.746667 204.8 215.04 204.8 372.053333c0 10.24 0 23.893333 3.413333 40.96 0 3.413333 0 10.24-3.413333 13.653334-3.413333 3.413333-10.24 3.413333-13.653333 6.826666h-3.413334c-85.333333 0-153.6 68.266667-153.6 153.6s68.266667 153.6 153.6 153.6h34.133334c10.24 0 17.066667 6.826667 17.066666 17.066667s-6.826667 17.066667-17.066666 17.066667h-34.133334c-105.813333 0-187.733333-85.333333-187.733333-187.733334 0-98.986667 75.093333-177.493333 174.08-187.733333v-27.306667c0-174.08 143.36-317.44 317.44-317.44 153.6 0 283.306667 109.226667 314.026667 256 122.88 6.826667 221.866667 105.813333 221.866666 228.693334-3.413333 129.706667-109.226667 232.106667-235.52 232.106666z" fill="" /><path d="M494.933333 839.68c-47.786667 0-85.333333-37.546667-85.333333-85.333333s37.546667-85.333333 85.333333-85.333334 85.333333 37.546667 85.333334 85.333334-37.546667 85.333333-85.333334 85.333333z m0-136.533333c-27.306667 0-51.2 23.893333-51.2 51.2s23.893333 51.2 51.2 51.2S546.133333 785.066667 546.133333 754.346667s-23.893333-51.2-51.2-51.2z" fill="" /><path d="M556.373333 969.386667c-6.826667 0-13.653333-3.413333-17.066666-10.24-6.826667-20.48-27.306667-30.72-47.786667-30.72s-37.546667 13.653333-47.786667 30.72c-3.413333 6.826667-13.653333 13.653333-20.48 10.24-34.133333-10.24-64.853333-27.306667-88.746666-54.613334-6.826667-6.826667-6.826667-13.653333-3.413334-20.48 10.24-17.066667 13.653333-37.546667 3.413334-54.613333-10.24-17.066667-27.306667-23.893333-44.373334-23.893333-6.826667 0-17.066667-6.826667-17.066666-13.653334v-47.786666c0-20.48 3.413333-40.96 10.24-61.44 0-3.413333 6.826667-10.24 13.653333-10.24 17.066667 0 34.133333-10.24 40.96-23.893334 6.826667-13.653333 10.24-30.72 3.413333-47.786666-3.413333-6.826667 0-13.653333 3.413334-20.48 27.306667-23.893333 58.026667-40.96 92.16-51.2 6.826667-3.413333 13.653333 0 17.066666 6.826666 20.48 23.893333 61.44 23.893333 81.92 0 3.413333-6.826667 10.24-6.826667 17.066667-6.826666 34.133333 10.24 64.853333 27.306667 92.16 51.2 6.826667 3.413333 6.826667 13.653333 3.413333 20.48-6.826667 13.653333-6.826667 30.72 3.413334 47.786666 10.24 13.653333 23.893333 23.893333 40.96 23.893334 6.826667 0 13.653333 6.826667 17.066666 13.653333 6.826667 20.48 10.24 40.96 10.24 61.44 0 13.653333 0 27.306667-3.413333 40.96 0 6.826667-10.24 13.653333-17.066667 13.653333-17.066667 0-37.546667 10.24-44.373333 23.893334-10.24 17.066667-10.24 37.546667 3.413333 54.613333 3.413333 6.826667 3.413333 17.066667-3.413333 20.48-23.893333 23.893333-54.613333 44.373333-88.746667 54.613333-6.826667 0-6.826667 3.413333-10.24 3.413334z m-61.44-78.506667c27.306667 0 54.613333 13.653333 71.68 37.546667 17.066667-6.826667 37.546667-17.066667 51.2-30.72-10.24-23.893333-10.24-54.613333 3.413334-78.506667 13.653333-23.893333 34.133333-37.546667 61.44-40.96v-23.893333c0-13.653333 0-27.306667-3.413334-40.96-23.893333-3.413333-44.373333-20.48-58.026666-40.96-10.24-20.48-13.653333-44.373333-6.826667-64.853334-17.066667-13.653333-37.546667-23.893333-58.026667-30.72-30.72 30.72-85.333333 30.72-119.466666 0-20.48 6.826667-40.96 17.066667-58.026667 30.72 6.826667 20.48 3.413333 44.373333-6.826667 64.853334-13.653333 20.48-34.133333 37.546667-58.026666 40.96-6.826667 17.066667-6.826667 30.72-6.826667" fill="" /></svg>
+   Infrastructure
+        </a>
+      </li>
+      <li>
+        <a href="#" type="button" class="btn">
+            <svg class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M896 128H128L64 384v512h896V384l-64-256zM524.8 192L576 384H448l51.2-192h25.6zM448 448h128v192H448V448zM179.2 192h256L384 384H128l51.2-192zM896 832H128V448h256v256h256V448h256v384z m-256-448l-44.8-192h256l44.8 192h-256z"  /></svg>
+          Parckages & registries
+        </a>
+      </li>
+      <li>
+        <a href="#" type="button" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 25 25"><path class="cls-1" d="M23.5,23H2V1.5a.5.5,0,0,0-1,0v22a.5.5,0,0,0,.5.5h22a.5.5,0,0,0,0-1Z"/><path class="cls-1" d="M4.5,22h4a.5.5,0,0,0,.5-.5v-10a.5.5,0,0,0-.5-.5h-4a.5.5,0,0,0-.5.5v10A.5.5,0,0,0,4.5,22ZM5,12H8v9H5Z"/><path class="cls-1" d="M10.5,22h4a.5.5,0,0,0,.5-.5V6.5a.5.5,0,0,0-.5-.5h-4a.5.5,0,0,0-.5.5v15A.5.5,0,0,0,10.5,22ZM11,7h3V21H11Z"/><path class="cls-1" d="M16.5,22h4a.5.5,0,0,0,.5-.5V9.5a.5.5,0,0,0-.5-.5h-4a.5.5,0,0,0-.5.5v12A.5.5,0,0,0,16.5,22ZM17,10h3V21H17Z"/></svg>
+Analytics        </a>
+      </li>
+      <li>
+        <a href="#" type="button" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+          Wiki
+        </a>
+      </li>
+      <li>
+        <a href="#" type="button" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-scissors" viewBox="0 0 16 16">
+                <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61 3.5 3.5zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zm7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"/>
+              </svg>
+          Snippets
+        </a>
+      </li><br><br>
+      <hr>
+      <li>
+        <a href="#" type="button" class="btn">
+            <svg class="svg-icon"  width="16" height="16" fill="currentColor"  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M903.964073 994.632678c-151.216693-151.232949-302.444224-302.449643-453.662724-453.668143-15.992267-16.006717-15.992267-41.934997 0-57.92907 151.216693-151.231143 302.44603-302.449643 453.662724-453.668143 14.988009-15.000653 39.315979-15.000653 54.302182 0 15.000653 14.988009 15.000653 39.303336 0 54.303988-142.77623 142.778036-285.55246 285.543429-428.31424 428.321465 142.763586 142.779842 285.53801 285.557878 428.31424 428.335915 15.000653 14.988009 15.000653 39.301529 0 54.303988-14.988009 15.000653-39.314173 15.000653-54.302182 0z" fill="#231815" /><path d="M520.149662 994.632678a11936898.605923 11936898.605923 0 0 1-453.675367-453.668143c-15.992267-15.992267-15.992267-41.934997 0-57.92907C217.703632 331.818771 368.918519 180.585822 520.149662 29.369128c14.986203-15.000653 39.301529-15.000653 54.302182 0 15.002459 15.002459 15.002459 39.303336 0 54.303989A13680304.839723 13680304.839723 0 0 1 146.123155 511.992775l428.328689 428.335915c15.002459 15.002459 15.002459 39.315979 0 54.303988-15.000653 15.000653-39.315979 15.000653-54.302182 0z" fill="#231815" /></svg>
+          Collapse sidebar
+        </a>
+      </li>
+    </ul>
+  </div>
+      <div class="col-8 mt-2">
+          <div class="row">
+          <div class="container">
+              <div class=" d-lg-flex">
+            <a href="#" class="d-flex link-secondary text-decoration-none" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+               souleimane Kelanye >
+              </a><a href="#" class="d-flex link-secondary text-decoration-none" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                box finale
+               </a> 
+            </div>
+        </div>
+        </div>
+        <hr width="1050px">
+
+        <div class="">
+            <div class="row g-0">
+              <div class="col-md-2">
+                <button class="btn" style="background-color: blanchedalmond ; width: 70px; height: 70px; font-size:30px;">B</button>
+              </div>
+              <div class="col-5" style="margin-left: -50px;">
+                <div class="">
+                    <div class="d-lg-flex">
+                  <h2 class="">box-final</h2> <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="15px" height="15px" style="margin-top:17px ; margin-left: 10px"><path d="M 25 3 C 18.363281 3 13 8.363281 13 15 L 13 20 L 9 20 C 7.355469 20 6 21.355469 6 23 L 6 47 C 6 48.644531 7.355469 50 9 50 L 41 50 C 42.644531 50 44 48.644531 44 47 L 44 23 C 44 21.355469 42.644531 20 41 20 L 37 20 L 37 15 C 37 8.363281 31.636719 3 25 3 Z M 25 5 C 30.566406 5 35 9.433594 35 15 L 35 20 L 15 20 L 15 15 C 15 9.433594 19.433594 5 25 5 Z M 9 22 L 41 22 C 41.554688 22 42 22.445313 42 23 L 42 47 C 42 47.554688 41.554688 48 41 48 L 9 48 C 8.445313 48 8 47.554688 8 47 L 8 23 C 8 22.445313 8.445313 22 9 22 Z M 25 30 C 23.300781 30 22 31.300781 22 33 C 22 33.898438 22.398438 34.6875 23 35.1875 L 23 38 C 23 39.101563 23.898438 40 25 40 C 26.101563 40 27 39.101563 27 38 L 27 35.1875 C 27.601563 34.6875 28 33.898438 28 33 C 28 31.300781 26.699219 30 25 30 Z"/></svg>
+                </div>
+                  <p class="d-lg-flex"><a href="#" class="d-flex link-secondary text-decoration-none" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Project ID: 19102820
+                   </a> <a href="#" class="d-flex link-primary text-decoration-none" id="dropdownUser2" style="margin-left: 10px;" data-bs-toggle="dropdown" aria-expanded="false">
+                    Leave project
+                   </a></p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  
+</div>
+</div>
+
+
+   
+
+
+
+
+
+</body>
+</html>
